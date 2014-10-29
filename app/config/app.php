@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://philippines-school-locator.dev',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Asia/Manila',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'VVbRI08Wckr0Kt7NlcP7quzRYvvguqI1',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 

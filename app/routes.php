@@ -1,17 +1,36 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
 
 Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+Route::get('/locate', ['as'=>'home.locate', 'uses'=>'HomeController@locate']);
+
+
+
+
+
+
+
+Route::get('/phpinfoko', function(){
+	echo phpinfo();
+});
+
+Route::get('/checkdbconn', function(){
+	if(DB::connection()->getDatabaseName()){
+	   echo "connected sucessfully to database ".DB::connection()->getDatabaseName();
+	}
+});
+
+Route::get('/env/hostname', function(){
+    return gethostname();
+});
+
+Route::get('/env', function(){
+    $environment = App::environment();
+    echo $environment;
+});
+
