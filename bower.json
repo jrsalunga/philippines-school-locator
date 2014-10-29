@@ -1,0 +1,10 @@
+{
+  "name": "My assets",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jqueryui": "~1.11.2",
+    "datatables": "~1.10.3",
+    "backbone": "~1.1.2",
+    "modernizer": "~2.8.2"
+  }
+}

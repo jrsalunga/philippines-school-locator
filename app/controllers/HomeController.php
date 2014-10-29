@@ -23,7 +23,8 @@ class HomeController extends BaseController {
 	
 	public function locate()
 	{
-		return View::make('home.locate');
+		return View::make('home.locate')
+				->with('title', 'Locate');
 	}
 
 }
